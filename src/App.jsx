@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@mui/material/styles";
 import { Box } from "@mui/material";
 
-import theme from "./theme/Theme.js";
+import theme from "./theme/Theme.jsx";
 
 // Layout components
 import Header       from "./components/Header";
