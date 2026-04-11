@@ -1,5 +1,10 @@
 import { createTheme } from "@mui/material/styles";
 
+// ─────────────────────────────────────────────────────────────────
+//  NOTE: This file is theme.jsx (not .js) so Vite / Lightning CSS
+//  never mistakes it for a CSS module.
+// ─────────────────────────────────────────────────────────────────
+
 const theme = createTheme({
   palette: {
     mode: "light",
@@ -7,6 +12,14 @@ const theme = createTheme({
     secondary:  { main: "#F47B20" },
     background: { default: "#F7F9FC", paper: "#FFFFFF" },
     text:       { primary: "#0D1B3E", secondary: "#5A6A85" },
+    // Centralised brand tokens — use as theme.palette.brand.navy etc.
+    brand: {
+      navy:   "#1A3C8F",
+      orange: "#F47B20",
+      dark:   "#0D1B3E",
+      muted:  "#5A6A85",
+      light:  "#F7F9FC",
+    },
   },
   typography: {
     fontFamily: '"Plus Jakarta Sans", "Inter", sans-serif',
@@ -17,15 +30,32 @@ const theme = createTheme({
     h5: { fontFamily: '"Syne", sans-serif', fontWeight: 600 },
     h6: { fontFamily: '"Syne", sans-serif', fontWeight: 600 },
   },
-  breakpoints: { values: { xs: 0, sm: 500, md: 768, lg: 1204, xl: 1200 } },
+  breakpoints: {
+    values: { xs: 0, sm: 480, md: 768, lg: 1024, xl: 1280 },
+  },
+  shape: {
+    borderRadius: 8,
+  },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: 1,
+          borderRadius: 8,
           textTransform: "none",
-          fontWeight: 900,
+          fontWeight: 600,
           fontSize: "0.9rem",
+        },
+      },
+    },
+    MuiTextField: {
+      defaultProps: {
+        variant: "outlined",
+      },
+    },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          fontWeight: 500,
         },
       },
     },
