@@ -3,7 +3,7 @@ import {
   Box, Stack, Typography, IconButton, TextField, Avatar, Fab,
 } from "@mui/material";
 import { Close, SmartToy, Person, Send } from "@mui/icons-material";
-import { CHAT_SUGGESTIONS, CHAT_SYSTEM } from "../constants/data";
+import { CHAT_SUGGESTIONS, CHAT_SYSTEM } from "../constants/Data";
 
 export default function AIChatButton() {
   const [open, setOpen]         = useState(false);

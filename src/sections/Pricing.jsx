@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography, Button, Stack, Chip, Divider } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
-import { PACKAGES } from "../constants/data";
+import { PACKAGES } from "../constants/Data";
 
 export default function Pricing({ onSectionClick }) {
   return (

@@ -3,7 +3,7 @@ import {
   Chip, Divider, IconButton,
 } from "@mui/material";
 import { TrendingUp, LinkedIn, Twitter, WhatsApp } from "@mui/icons-material";
-import { FOOTER_NAV } from "../constants/data";
+import { FOOTER_NAV } from "../constants/Data";
 
 export default function Footer({ onSectionClick }) {
   return (

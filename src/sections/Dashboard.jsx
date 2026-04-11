@@ -3,7 +3,7 @@ import {
   AreaChart, Area, LineChart, Line, BarChart, Bar,
   PieChart, Pie, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis,
 } from "recharts";
-import { revenueData, cashData, pieData, kpiData } from "../constants/data";
+import { revenueData, cashData, pieData, kpiData } from "../constants/Data";
 
 const KPI_CARDS = [
   { label: "Total Revenue", value: "₹1.04 Cr", change: "+18%", color: "#1A3C8F" },

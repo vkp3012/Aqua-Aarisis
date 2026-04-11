@@ -5,7 +5,7 @@ import {
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Menu as MenuIcon, Close, TrendingUp } from "@mui/icons-material";
-import { NAV_LINKS } from "../constants/data";
+import { NAV_LINKS } from "../constants/Data";
 
 export default function Header({ onSectionClick }) {
   const muiTheme = useTheme();

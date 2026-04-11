@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography, Stack, Chip } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
-import { PILLARS } from "../constants/data";
+import { PILLARS } from "../constants/Data";
 
 const PAIN_POINTS = [
   "No CFO / VCFO gap filled strategically",
