@@ -7,12 +7,12 @@ import theme from "./theme/Theme";
 import Header       from "./components/Header";
 import Footer       from "./components/Footer";
 import AIChatButton from "./components/Chat";
-import ScrollTop    from "./components/Scrolltop";
+import ScrollTop    from "./components/Scrolltap";
 
 // Page sections
 import Hero      from "./sections/Hero";
 import Services  from "./sections/Service";
-import Dashboard from "./sections/Deskboard";
+import Dashboard from "./sections/Dashboard";
 import About     from "./sections/About";
 import Pricing   from "./sections/Pricing";
 import Contact   from "./sections/Contact";
