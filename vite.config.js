@@ -2,6 +2,12 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+  css: {
+    transformer: 'postcss', // use postcss instead of lightningcss
+  },
+  build: {
+    cssMinify: 'esbuild', // or false to disable CSS minification
+  },
   plugins: [react()],
 
   resolve: {
