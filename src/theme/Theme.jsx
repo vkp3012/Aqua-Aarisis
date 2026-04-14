@@ -1,10 +1,5 @@
 import { createTheme } from "@mui/material/styles";
 
-// ─────────────────────────────────────────────────────────────────
-//  NOTE: This file is theme.jsx (not .js) so Vite / Lightning CSS
-//  never mistakes it for a CSS module.
-// ─────────────────────────────────────────────────────────────────
-
 const theme = createTheme({
   palette: {
     mode: "light",
@@ -12,7 +7,6 @@ const theme = createTheme({
     secondary:  { main: "#F47B20" },
     background: { default: "#F7F9FC", paper: "#FFFFFF" },
     text:       { primary: "#0D1B3E", secondary: "#5A6A85" },
-    // Centralised brand tokens — use as theme.palette.brand.navy etc.
     brand: {
       navy:   "#1A3C8F",
       orange: "#F47B20",
